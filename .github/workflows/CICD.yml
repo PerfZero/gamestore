@@ -18,7 +18,19 @@ jobs:
     - name: Prepare WordPress Zip
       run: |
         WP_LINK=$(cat wp-version-control.cfg)
-        wget -O "./wordpress.zip" $WP_LINK
+        for i in {1..5}; do
+          if wget --timeout=30 --tries=3 -O "./wordpress.zip" $WP_LINK; then
+            if [ -f "./wordpress.zip" ] && [ -s "./wordpress.zip" ]; then
+              echo "WordPress downloaded successfully"
+              break
+            else
+              echo "Downloaded file is empty or corrupted"
+              rm -f "./wordpress.zip"
+            fi
+          fi
+          echo "Attempt $i failed, waiting 10 seconds..."
+          sleep 10
+        done
   
     - name: Prepare plugins and theme zip
       run: zip -r wpcontent.zip plugins mu-plugins themes
