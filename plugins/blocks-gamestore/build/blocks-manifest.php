@@ -36,12 +36,10 @@ return array(
 		),
 		'attributes' => array(
 			'memberLink' => array(
-				'type' => 'string',
-				'default' => ''
+				'type' => 'string'
 			),
 			'cartLink' => array(
-				'type' => 'string',
-				'default' => ''
+				'type' => 'string'
 			)
 		),
 		'textdomain' => 'blocks-gamestore',

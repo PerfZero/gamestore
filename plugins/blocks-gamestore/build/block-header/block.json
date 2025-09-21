@@ -12,12 +12,10 @@
   },
   "attributes": {
     "memberLink": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "cartLink": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     }
   },
   "textdomain": "blocks-gamestore",
