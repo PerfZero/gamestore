@@ -1,0 +1,31 @@
+.wp-block-blocks-gamestore-block-header {
+	min-height: 100px;
+	display: flex;
+	background-color: var(--background-default);
+	width: 100%;
+	color: var(--text-primary);
+
+	.inner-header{
+		padding: 0px 20px;
+		display: flex;
+		width: 100%;
+		height: 100px;
+		align-items: center;
+		justify-content: space-between;
+		
+
+	
+	}
+
+	.wp-block-group{
+		display: flex;
+		align-items: center;
+		gap: 48px;
+		justify-content: space-between;
+	}
+
+
+	.wp-block-navigation{
+		margin: 0;
+	}
+}

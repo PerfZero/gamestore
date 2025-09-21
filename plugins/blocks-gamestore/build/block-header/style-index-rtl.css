@@ -1,0 +1,27 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block-header/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-blocks-gamestore-block-header {
+  min-height: 100px;
+  display: flex;
+  background-color: var(--background-default);
+  width: 100%;
+  color: var(--text-primary);
+}
+.wp-block-blocks-gamestore-block-header .inner-header {
+  padding: 0px 20px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.wp-block-blocks-gamestore-block-header .wp-block-group {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  justify-content: space-between;
+}
+.wp-block-blocks-gamestore-block-header .wp-block-navigation {
+  margin: 0;
+}
